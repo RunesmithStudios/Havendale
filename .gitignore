@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Virtualenv directory
+havendale
+
+# Production code
+static

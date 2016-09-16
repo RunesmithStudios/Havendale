@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html ng-app="runesmith">
+    <head>
+        <meta charset="utf-8" />
+        <title>Runesmith Studios</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='lib/bootstrap-css-only/css/bootstrap.min.css') }}" />
+
+        <!-- Custom Fonts -->
+        <link
+            href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+            rel='stylesheet'
+            type='text/css'>
+        <link
+            href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+            rel='stylesheet'
+            type='text/css'>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css') }}" />
+    </head>
+
+    <body id="page-top">
+        <div ui-view></div>
+
+        <!-- Angular -->
+        <script src="{{ url_for('static', filename='lib/angular/angular.min.js') }}">
+        </script>
+        <!-- Angular 'addons' -->
+        <script src="{{ url_for('static', filename='lib/angular-ui-router/release/angular-ui-router.min.js') }}">
+        </script>
+        <script src="{{ url_for('static', filename='lib/angular-bootstrap/ui-bootstrap.min.js')}}">
+        </script>
+        <script src="{{ url_for('static', filename='lib/angular-scroll/angular-scroll.min.js') }}">
+        </script>
+
+        <!-- our code -->
+        <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+    </body>
+</html>

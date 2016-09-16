@@ -1,0 +1,13 @@
+{
+
+    "maxerr"        : 50,
+    "bitwise"       : false,
+    "camelcase"     : false,
+    "curly"         : false,
+    "immed"         : false,
+    "nonew"         : true,
+    "varstmt"       : true,
+    "asi"           : true,
+    "boss"          : true,
+    "esversion"     : 6
+}

@@ -1,8 +1,9 @@
 <!doctype html>
 
-<html ng-app="runesmith">
+<html ng-app="havendale">
     <head>
         <meta charset="utf-8" />
+        <base href="/">
         <title>Runesmith Studios</title>
 
         <link rel="stylesheet"
@@ -19,24 +20,13 @@
             type='text/css'>
 
         <link rel="stylesheet"
-            href="{{ url_for('static', filename='css/styles.css') }}" />
+            href="{{ url_for('static', filename='css/styles.b00a3f4f.css') }}" />
     </head>
 
     <body id="page-top">
         <div ui-view></div>
 
-        <!-- Angular -->
-        <script src="{{ url_for('static', filename='lib/angular/angular.min.js') }}">
-        </script>
-        <!-- Angular 'addons' -->
-        <script src="{{ url_for('static', filename='lib/angular-ui-router/release/angular-ui-router.min.js') }}">
-        </script>
-        <script src="{{ url_for('static', filename='lib/angular-bootstrap/ui-bootstrap.min.js')}}">
-        </script>
-        <script src="{{ url_for('static', filename='lib/angular-scroll/angular-scroll.min.js') }}">
-        </script>
-
         <!-- our code -->
-        <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/scripts.min.57fc5d7f.js') }}"></script>
     </body>
 </html>

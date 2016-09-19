@@ -1,0 +1,228 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" du-smooth-scroll="home">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a du-smooth-scroll="about">About</a>
+                </li>
+                <li>
+                    <a du-smooth-scroll="schedule">Schedule</a>
+                </li>
+                <li>
+                    <a du-smooth-scroll="gaming">Gaming</a>
+                </li>
+                <li>
+                    <a du-smooth-scroll="podcast">Podcast</a>
+                </li>
+                <li>
+                    <a du-smooth-scroll="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="header-content" id="home">
+        <div class="header-content-inner">
+            <h1>Forging new game experiences</h1>
+            <hr>
+            <p>We are Runesmith Studios, a workshop of four smiths bestowed with the challenge of crafting new ways players and viewers interact with each other. Will our heroes of questionable honour manage to complete such feat? </p>
+            <a du-smooth-scroll="about" class="btn btn-primary btn-xl">Will they?</a>
+        </div>
+    </div>
+</header>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-1 text-center">
+                <h2 class="section-heading">The runes</h2>
+                <hr class="light">
+                <p class="text-faded">Whilst trying to craft a new experience the four smiths decided to showcase their inner workings, streaming themselves playing and interacting with as many viewers as they can, providing their customers with new tools to interact and have fun along the way.</p>
+                <a du-smooth-scroll="schedule" class="btn btn-default btn-xl">Come and join 'em!</a>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Our games foundry</h2>
+                <hr class="light">
+                <p class="text-faded">Here the smiths labor nonstop to forge new games, always improving their techniques to better mold their ideas, bringing innovative gameplay and design to all.</p>
+                <br />
+                <br />
+                <a class="btn btn-default btn-xl">Enter the forge!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-padding schedule" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{{ url_for 'img/portfolio/1.jpg' }}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Pommel to point
+                            </div>
+                            <div class="project-name">
+                                Youtube: Sunday 1pm  <!-- LOCALIZE! --><br />
+                                Twitch: Friday 7pm<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{% url_for 'img/portfolio/2.jpg' %}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Memories from a cold foundry
+                            </div>
+                            <div class="project-name">
+                                Podcast: Monday 7am <br />
+                                Twitch: Thursday 7pm<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{% url_for 'img/portfolio/3.jpg' %}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                4ging teams
+                            </div>
+                            <div class="project-name">
+                                Youtube: Tuesday 1pm<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{% url_for 'img/portfolio/4.jpg' %}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Afterhours<br />
+                            </div>
+                            <div class="project-name">
+                                Twitch: Wednesday 7pm<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{% url_for 'img/portfolio/5.jpg' %}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Scream, Ventorim, Scream!<br /> Solo Venue Saturday
+                            </div>
+                            <div class="project-name">
+                                Twitch: Saturday 7pm<br />
+                                Youtube: Thursday 1pm<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 show-covers">
+                <a href="/#/app/" class="portfolio-box">
+                    <img src="{% url_for 'img/portfolio/6.jpg' %}" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Under the forge<br />
+                            </div>
+                            <div class="project-name">
+                                Podcast: Monday 7am<br />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>The "heroes"</h2>
+        </div>
+        <p>
+            Oathbreaker
+            The Stone Speaker
+            Born in the hellish northeast of the Damned Land, Oathbreaker started his career as a professional traitor when his best friend threw a rock at him and that stone told him to leave his friend. Forever. Thus becoming The Stone Speaker.
+            The whereabouts of the sad friend are unknown.
+        </p>
+        <p>
+            Scream
+            The Forge Augur
+
+            Some say he is a prophet, others, a con artist. All we know is he saw some serious shit. And like every good prophet in myth, he definitely wasn't in his right mind when he did.
+        </p>
+        <p>
+            Synapse
+            The Geometer
+            Sick and tired of small countries, Synapse came to the Damned Land hoping to measure the earth. However his fellow smiths lost the measuring devices and still haven't told him about it.
+        </p>
+        <p>
+            Ventorim
+            The Outlander
+            Born in the Damned Land, unable to cope with his origins, Ventorim sought acceptance of the People from Beyond, calling himself The Outlander.
+            He failed.
+
+        </p>
+        <p>
+            Faceless
+            The Faceless
+            He does not have a face.
+        </p>
+        <p>
+            The Mæcenas
+            Flabbergasted with the smiths' astounding vision he decided to give them gold, either to help them or to keep them away.
+            We are not sure.
+        </p>
+        <p>Artist. Unknown. See the prettier blueprints for reference.</p>
+    </div>
+</aside>
+
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <hr class="primary">
+                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                <p>123-456-6789</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>

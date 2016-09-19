@@ -16,15 +16,20 @@
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-babel": "^6.1.2",
     "gulp-bower": "0.0.13",
     "gulp-cachebust": "0.0.6",
-    "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.3",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.4",
+    "rollup-plugin-includepaths": "^0.1.6",
+    "rollup-stream": "^1.14.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

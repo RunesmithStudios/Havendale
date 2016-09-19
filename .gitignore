@@ -41,3 +41,6 @@ havendale
 
 # Production code
 static
+
+# Python
+*.pyc

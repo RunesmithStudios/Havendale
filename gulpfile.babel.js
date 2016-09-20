@@ -94,7 +94,7 @@ gulp.task('scripts', ['prepareScripts'], () => {
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(rename('scripts.min.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(cachebust.resources())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(path.to.scripts))

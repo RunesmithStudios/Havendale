@@ -1,3 +1,83 @@
-.abacate {
-    transition: all 0.35s;
+body {
+    margin: 0;
+    background-color: black; // temporary
+}
+
+$studio-purple: #AE82B5;
+
+a {
+    transition: all 0.5s;
+    color: $studio-purple;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: orange;
+    }
+}
+
+.banner {
+    background-image: url("../img/horizontal.white.logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 16em;
+    height: 4em;
+
+    margin-left: 0.2em;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url("../img/horizontal.purple.logo.png");
+    }
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+
+    transition: all 0.5s;
+
+    li {
+        float: right;
+        // banner breathing room
+        margin-top: 0.5em;
+
+        &.banner {
+            float: left;
+        }
+
+        a, a:focus {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: rgba(700, 700, 700, 0.7);
+
+            cursor: pointer;
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+            padding: 1em 1.2em;
+            text-decoration: none;
+
+            &:hover { color: $studio-purple; }
+        }
+
+
+        &.active > a,
+        &.active > a.focus {
+            color: $studio-purple;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    ul.navbar li,
+    ul.navbar li.banner {
+        float: none;
+    }
 }

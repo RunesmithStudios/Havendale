@@ -7,7 +7,7 @@ function HomeCtrl($scope, $document)
 
         if($document.scrollTop() >= 51)
         {
-            let navbar = angular.element('.mainNav')
+            let navbar = angular.element('.navbar')
             if(! navbar.hasClass('affix')) navbar.addClass('affix')
         }
     })

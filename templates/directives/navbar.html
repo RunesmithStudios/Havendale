@@ -1,0 +1,8 @@
+<div class="navbar grid grid-fluid">
+    <div class="row">
+        <a class="banner col-{[ 12 - menu.links.length ]}" du-smooth-scroll="{[ menu.banner ]}"></a>
+        <a ng-repeat="link in menu.links" class="col-1" du-smooth-scroll="{[ link.link ]}">
+            {[ link.name ]}
+        </a>
+    </div>
+</div>

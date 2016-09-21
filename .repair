@@ -1,0 +1,2 @@
+rm .babelrc
+mv temp.babelrc .babelrc

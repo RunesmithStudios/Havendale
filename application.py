@@ -11,3 +11,7 @@ def index():
 @app.route('/home', methods=['GET'])
 def home():
     return render_template('home.html')
+
+@app.route('/directives/<string:directive>')
+def directives(directive):
+    return render_template('directives/%s.html' % directive)

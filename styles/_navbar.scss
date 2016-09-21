@@ -1,0 +1,42 @@
+div.navbar {
+    background-color: transparent;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+
+    .banner {
+        background-image: url("../img/horizontal.white.logo.png");
+        background-size: contain;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+
+        transition: all 0.5s;
+
+        &:hover {
+            background-image: url("../img/horizontal.purple.logo.png");
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgba(700, 700, 700, 0.7);
+
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+
+        height: 4em;
+        line-height: 4em;
+
+        &.active,
+        &:hover {
+            color: $studio-purple;
+        }
+
+        &.affix {
+            height: 3em;
+            line-height: 3em;
+        }
+    }
+}

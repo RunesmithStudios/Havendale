@@ -23,6 +23,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
+    "jasmine": "^2.5.2",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
     "rollup-plugin-babel": "^2.6.1",

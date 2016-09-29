@@ -19,7 +19,6 @@ navbar {
 
     a {
         text-transform: uppercase;
-        font-weight: 700;
         color: rgba(700, 700, 700, 0.7);
 
         cursor: pointer;
@@ -32,13 +31,14 @@ navbar {
         &.active,
         &:hover {
             color: $studio-purple;
+            text-decoration: none;
         }
     }
 
     &.affix {
         a {
-            height: 3em;
-            line-height: 3em;
+            height: 2em;
+            line-height: 2em;
         }
     }
 }

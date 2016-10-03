@@ -40,7 +40,7 @@ jspm_packages
 havendale
 
 # Production code
-static
+static/*
 !static/img
 templates/index.html
 

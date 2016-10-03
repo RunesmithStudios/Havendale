@@ -42,6 +42,7 @@ havendale
 # Production code
 static
 !static/img
+templates/index.html
 
 # Python
 *.pyc

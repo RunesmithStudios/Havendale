@@ -66,9 +66,23 @@ navbar {
 
     // responsive design
 
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:768px) {
         a:not(:first-child) {
             display: none;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        a {
+            height: 3em;
+            line-height: 3em;
+        }
+
+        .affix {
+            a {
+                height: 2em;
+                line-height: 2em;
+            }
         }
     }
 }

@@ -35,10 +35,39 @@ navbar {
         }
     }
 
+    // 'Scrolled' state
+
     &.affix {
+
+        background-color: white;
+
+        .banner {
+            background-image: url("../img/horizontal.logo.png");
+
+            &:hover {
+                background-image: url("../img/horizontal.purple.logo.png");
+            }
+        }
+
         a {
-            height: 2em;
-            line-height: 2em;
+
+            height: 3em;
+            line-height: 3em;
+
+            color: black;
+
+            &:hover {
+                color: $studio-purple;
+                text-decoration: none;
+            }
+        }
+    }
+
+    // responsive design
+
+    @media screen and (max-width:680px) {
+        a:not(:first-child) {
+            display: none;
         }
     }
 }

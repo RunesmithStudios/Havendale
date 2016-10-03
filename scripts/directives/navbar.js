@@ -20,8 +20,7 @@ function navbar($document, $window)
             element.addClass('grid grid-fluid')
 
             $document.on('scroll', () => {
-                console.log($window.pageYOffset)
-                if($window.pageYOffset >= 51)
+                if($window.pageYOffset >= 61)
                 {
                     if(! element.hasClass('affix')) element.addClass('affix')
                 } else {

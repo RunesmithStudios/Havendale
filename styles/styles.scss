@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    background-color: black; // temporary
 }
 
-$studio-purple: #AE82B5;
+$studio-purple: rgba(174, 130, 181, 1);
+$transparent-studio-purple: rgba(174,130,181,0.62);
+$slightly-transparent: rgba(255, 255, 255, 0.7);
 
 a {
     transition: all 0.5s;
@@ -15,4 +16,10 @@ a {
     }
 }
 
-@import 'navbar'
+.btn {
+    text-transform: uppercase;
+    border-radius: 300px;
+}
+
+@import 'navbar';
+@import 'home';

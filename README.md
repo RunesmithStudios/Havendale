@@ -15,10 +15,11 @@ It's completely written in plain good ES2015 Javascript, and SASS.
 $ github clone git@github.com:RunesmithStudios/Havendale.git
 $ cd Havendale
 $ pip install virtualenv
+$ virtualenv havendale
 $ source .env
 $ pip install -r requirements.txt
 $ npm install
-$ gulp
+$ npm run build
 ```
 
 Havendale is hosted by [GitHub](https://git-scm.com) and installs its dependencies with [npm](http://npmjs.org/) and [pip](https://pip.pypa.io/en/stable/installing/). Make sure all that is properly installed before anything else.
@@ -32,7 +33,7 @@ $ source .env
 `.env` is your environment activation file. To exit your environment, run `deactivate`.
 
 ```sh
-$ gulp
+$ npm run build
 $ flask run
 ```
 
@@ -52,3 +53,9 @@ That one happens because we change .babelrc during the execution of gulp. If som
 TL;DR: Run `source .env` and try again.
 
 If you don't have a global installation of flask (you shouldn't), executing it outside of the virtualenv will raise this. Just run your virtual environment and you'll be fine.
+
+> "npm WARN This failure might be due to the use of legacy binary 'node'" while running `npm run build`
+
+TL;DR: Run `sudo npm install -g n && sudo n stable`
+
+Your version of node is probably out of date. Run the above commands to update it.

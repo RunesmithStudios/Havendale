@@ -6,6 +6,7 @@ function HomeCtrl($scope, $document)
     $scope.navbarContent = {
         banner: 'home',
         links: [
+            //link          name
             ['about',       'About'     ],
             ['schedule',    'Schedule'  ],
             ['gaming',      'Gaming'    ],

@@ -52,7 +52,7 @@ gulp.task('styles', ['clean'], () => {
         .pipe(gulp.dest(path.to.styles))
 })
 
-gulp.task('lint', () => {
+gulp.task('lint', () => { 
     return gulp.src(path.from.scripts)
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))

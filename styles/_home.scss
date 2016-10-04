@@ -10,8 +10,6 @@ header {
 
     position: relative;
 
-    
-
     .content {
         position: absolute;
         top: 50%;
@@ -23,6 +21,8 @@ header {
             margin-left: auto;
             margin-right: auto;
             color: $transparent-studio-purple;
+
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
         }
 
         hr {
@@ -40,6 +40,9 @@ header {
         .btn {
             background-color: $studio-purple;
             color: white;
+            font-size: 1em !important;
+            font-weight: 700;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 
             &:hover,
             &:focus,

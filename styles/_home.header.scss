@@ -5,7 +5,6 @@ header {
 
     min-height: 100vh;
 
-    text-align: center;
     color: white;
 
     position: relative;
@@ -38,19 +37,12 @@ header {
         }
 
         .btn {
-            background-color: $studio-purple;
-            color: white;
-            font-size: 1em !important;
-            font-weight: 700;
-            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-
-            &:hover,
-            &:focus,
-            &:active,
-            &.active {
-                color: white;
-                background-color: orange;
-            }
+            @include btn(
+                $color: white,
+                $bg-color: $studio-purple,
+                $h-color: white,
+                $h-bg-color: orange
+            );
         }
     }
 }

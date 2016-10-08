@@ -1,10 +1,13 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 $studio-purple: rgba(174, 130, 181, 1);
 $transparent-studio-purple: rgba(174,130,181,0.62);
 $slightly-transparent: rgba(255, 255, 255, 0.7);
+
+$gaming-blue: rgba(25, 164, 173, 1);
 
 a {
     transition: all 0.5s;
@@ -16,10 +19,23 @@ a {
     }
 }
 
-.btn {
-    text-transform: uppercase;
-    border-radius: 300px;
+.bg-studio {
+    background-color: $studio-purple;
 }
 
+.bg-gaming {
+    background-color: $gaming-blue;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr.light {
+    border-color: white;
+}
+
+@import 'mixins';
 @import 'navbar';
-@import 'home';
+@import 'home.header';
+@import 'home.about';

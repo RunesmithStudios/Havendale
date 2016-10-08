@@ -17,9 +17,12 @@ import buffer from 'vinyl-buffer'
 import commonjs from 'rollup-plugin-commonjs'
 import includePaths from 'rollup-plugin-includepaths'
 
+import es6promise from 'es6-promise'
+
 const staticdir = 'static'
 
 let cachebust = new Cachebuster();
+es6promise.polyfill()
 
 const path = {
     from: {
@@ -52,7 +55,7 @@ gulp.task('styles', ['clean'], () => {
         .pipe(gulp.dest(path.to.styles))
 })
 
-gulp.task('lint', () => { 
+gulp.task('lint', () => {
     return gulp.src(path.from.scripts)
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))

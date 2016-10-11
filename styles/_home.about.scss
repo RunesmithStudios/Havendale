@@ -4,7 +4,7 @@ section#about {
         position: relative;
 
         &.bg-mix {
-            background: linear-gradient(to right, $studio-purple, $gaming-blue);
+            background-image: url('../../static/img/tentacles.png');
 
             .helper {
                 display: inline-block;

@@ -14,6 +14,10 @@ function HomeCtrl($scope, $document)
             ['contact',     'contact'   ]
         ]
     }
+
+    $scope.centerImg = "static/img/gaming.logo.png"
+
+    $scope.potato = "blabla"
 }
 
 HomeCtrl.$inject = ['$scope', '$document']

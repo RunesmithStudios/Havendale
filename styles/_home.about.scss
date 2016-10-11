@@ -1,5 +1,78 @@
 section#about {
-    .content {
-        max-width: 80%;
+    .content .col {
+        min-height: 30em;
+        position: relative;
+
+        &.bg-mix {
+            background: linear-gradient(to right, $studio-purple, $gaming-blue);
+
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            img {
+                vertical-align: middle;
+                height: 15em;
+            }
+        }
+
+        .vertical-center {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.left {
+                text-align: right;
+            }
+
+            &.right {
+                text-align: left;
+            }
+
+            h2, p {
+                max-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            h2 {
+                color: $slightly-transparent;
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            }
+
+            hr {
+                max-width: 50%;
+            }
+
+            p {
+                color: $slightly-transparent;
+                min-height: 12em;
+            }
+
+            .center-button {
+                text-align: center;
+            }
+
+            .btn-studio {
+                @include btn(
+                    $color: white,
+                    $bg-color: $gaming-blue,
+                    $h-color: white,
+                    $h-bg-color: orange
+                );
+            }
+
+            .btn-gaming {
+                @include btn(
+                    $color: white,
+                    $bg-color: $studio-purple,
+                    $h-color: white,
+                    $h-bg-color: orange
+                );
+            }
+        }
     }
 }

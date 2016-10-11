@@ -4,15 +4,20 @@ section#about {
         position: relative;
 
         &.bg-mix {
+            overflow: hidden;
+        }
+
+        &.bg-mix:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
             background-image: url('../../static/img/tentacles.jpg');
             background-size: cover;
             background-position: center;
-
-            .helper {
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
-            }
         }
 
         .vertical-center {
@@ -70,6 +75,34 @@ section#about {
                     $h-color: white,
                     $h-bg-color: orange
                 );
+            }
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .content .col {
+            min-height: 80vh;
+
+            &.bg-mix {
+                min-height: 20vh;
+                overflow: inherit;
+            }
+
+            &.bg-mix:before {
+                height: 100vw;
+                width: 22vh;
+
+                // center element
+                left: calc(50vw - 11vh);
+                top: calc(10.5vh - 50vw);
+
+                transform: rotate(90deg);
+            }
+
+            .vertical-center {
+                h2, hr, p {
+                    max-width: 70%;
+                }
             }
         }
     }

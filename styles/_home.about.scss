@@ -4,17 +4,14 @@ section#about {
         position: relative;
 
         &.bg-mix {
-            background-image: url('../../static/img/tentacles.png');
+            background-image: url('../../static/img/tentacles.jpg');
+            background-size: cover;
+            background-position: center;
 
             .helper {
                 display: inline-block;
                 height: 100%;
                 vertical-align: middle;
-            }
-
-            img {
-                vertical-align: middle;
-                height: 15em;
             }
         }
 

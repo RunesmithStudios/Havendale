@@ -41,6 +41,7 @@ section#about {
             h2 {
                 color: $slightly-transparent;
                 font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                height: 2.5em;
             }
 
             hr {
@@ -49,7 +50,7 @@ section#about {
 
             p {
                 color: $slightly-transparent;
-                min-height: 12em;
+                min-height: 14em;
             }
 
             .center-button {

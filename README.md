@@ -15,7 +15,7 @@ It's completely written in plain good ES2015 Javascript, and SASS.
 $ github clone git@github.com:RunesmithStudios/Havendale.git
 $ cd Havendale
 $ pip install virtualenv
-$ virtualenv havendale
+$ virtualenv hav-env
 $ source .env
 $ pip install -r requirements.txt
 $ npm install

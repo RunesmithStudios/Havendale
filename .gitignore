@@ -37,7 +37,7 @@ jspm_packages
 .node_repl_history
 
 # Virtualenv directory
-havendale
+hav-env
 
 # Production code
 static/*
@@ -46,3 +46,4 @@ templates/index.html
 
 # Python
 *.pyc
+.Python

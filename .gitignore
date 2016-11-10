@@ -47,3 +47,6 @@ templates/index.html
 # Python
 *.pyc
 .Python
+
+#mac
+.DS_Store

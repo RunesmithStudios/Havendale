@@ -1,3 +1,10 @@
 section#portfolio {
-    
+
+    transition: 0.5s ease-in-out all;
+
+    max-height: 0;
+
+    .studio, .gaming {
+        max-height: 100%;
+    }
 }

@@ -5,6 +5,7 @@ section#about {
 
         &.bg-mix {
             overflow: hidden;
+            background-color: $studio-purple;
         }
 
         &.bg-mix:before {
@@ -14,8 +15,8 @@ section#about {
             height: 100%;
             top: 0;
             left: 0;
-            z-index: -1;
-            background-image: url('../../static/img/tentacles.jpg');
+            z-index: 2;
+            background-image: url('../../static/img/tentacles.png');
             background-size: cover;
             background-position: center;
         }
@@ -24,6 +25,8 @@ section#about {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+
+            cursor: default;
 
             &.left {
                 text-align: right;

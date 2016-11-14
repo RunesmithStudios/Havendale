@@ -25,6 +25,12 @@ function HomeCtrl($scope, $document)
             "fantástico"
         ]
     }
+
+    $scope.showPortfolio = (target) => {
+        let portfolio = angular.element(document.querySelect('#portfolio'))
+
+        portfolio.addClass(target)
+    }
 }
 
 HomeCtrl.$inject = ['$scope', '$document']

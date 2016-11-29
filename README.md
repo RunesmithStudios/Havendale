@@ -12,7 +12,7 @@ It's completely written in plain good ES2015 Javascript, and SASS.
 ## Install
 
 ```sh
-$ github clone git@github.com:RunesmithStudios/Havendale.git
+$ git clone git@github.com:RunesmithStudios/Havendale.git
 $ cd Havendale
 $ pip install virtualenv
 $ virtualenv hav-env
